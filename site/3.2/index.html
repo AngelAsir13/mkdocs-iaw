@@ -1,0 +1,669 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../1.11/">
+      
+      
+        <link rel="next" href="../4.1/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>Practica 3.2 - Practicas de IAW</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Liberation+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Liberation Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="ligth.blue" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#iaw-practica-32" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Practicas de IAW" class="md-header__button md-logo" aria-label="Practicas de IAW" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Practicas de IAW
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Practica 3.2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Practicas de IAW" class="md-nav__button md-logo" aria-label="Practicas de IAW" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Practicas de IAW
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Principal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Practicas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Practicas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1.11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Practica 1.11
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Practica 3.2
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Practica 3.2
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Templates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playbooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Playbooks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comprobacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprobación
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4.1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Practica 4.1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Templates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playbooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Playbooks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comprobacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprobación
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="iaw-practica-32">iaw-practica-3.2</h1>
+<p>Para esta practica debemos añadir unos cuantos playbooks a los realizados en la practica 3.1 y cambiar nuestro despliegue de aplicación para que sea Wordpress.</p>
+<p>Para ello vamos a comenzar por crear y definir nuestra infraestructura. Necesitaremos dos Front-Ends, un Back-End, un NFS y un Load Balancer.</p>
+<p>Una vez listo pasaremos a crear los archivos que necesitamos y los playbooks</p>
+<h2 id="templates">Templates</h2>
+<p>Necesitamos un <code>000-default.conf</code> con el siguiente contenido:</p>
+<pre><code>ServerSignature Off
+ServerTokens Prod
+
+&lt;VirtualHost *:80&gt;
+    #ServerName www.example.com
+    DocumentRoot /var/www/html
+    DirectoryIndex index.php index.html
+
+    &lt;Directory &quot;/var/www/html&quot;&gt;
+        AllowOverride All
+    &lt;/Directory&gt;
+
+    ErrorLog ${APACHE_LOG_DIR}/error.log 
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+&lt;/VirtualHost&gt;
+</code></pre>
+<p>Un <code>load-balancer.conf</code> que contenga lo siguiente:</p>
+<pre><code>upstream frontend_servers {
+    server IP_FRONTEND_1;
+    server IP_FRONTEND_2;
+}
+
+server {
+    listen 80;
+    server_name _;
+
+    location / {
+        proxy_pass http://frontend_servers;
+    }
+}
+</code></pre>
+<p>Un "export" para nuestro NFS Server que tenga la siguiente linea <code>/var/www/html NFS_FRONTEND_NETWORK(rw,sync,no_root_squash,no_subtree_check)</code></p>
+<p>Y por ultimo un <code>.htacces</code> para que correcto funcionamiento de Wordpress que tenga:</p>
+<pre><code># BEGIN WordPress
+&lt;IfModule mod_rewrite.c&gt;
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+&lt;/IfModule&gt;
+# END WordPress
+</code></pre>
+<p>Una vez listo pasaremos a los playbooks</p>
+<h2 id="playbooks">Playbooks</h2>
+<p>Comenzaremos por nuestro <code>install_lamp_frontend</code>, <code>setup_letsencrypt_https</code> y <code>install_lamp_backend</code> el cual no se diferencia de la practica anterior, a excepción de usar "nginx" en nuestro Let`s Encrypt.</p>
+<p>Crearemos dos mas para NFS, uno para el servidor y otro para el cliente lo cuales constaran de:</p>
+<p>Para el server, instalaremos "nfs-kernel-server", crearemos el directorio <code>var/www/html</code>, y cambiaremos los propietarios por "nobody:nogroup". 
+Una vez listo eso, copiaremos nuestro archivo "exports" en <code>etc/exports</code> y lo modificaremos usando:</p>
+<pre><code>    - name: Reemplazamos el FrontEnd_Network
+      replace:
+        path: /etc/exports
+        regexp: NFS_FRONTEND_NETWORK
+        replace: &quot;{{ nfs.network }}&quot;
+</code></pre>
+<p>Para el cliente, instalaremos "nfs-common" y montaremos el punto de enlace con:</p>
+<pre><code>    - name: Montamos el punto de cliente
+      mount:
+        path: /var/www/html
+        src: &quot;{{ nfs.server_ip }}:/var/www/html&quot;
+        fstype: nfs
+        state: mounted
+</code></pre>
+<p>Para reiniciarlo para terminar.</p>
+<p>Vamos a pasar a la configuración de nuestro "setup_loadbalancer", en el cual vamos a instalar "nginx" y copiar nuestro archivo "load-balancer.conf".
+Despues vamos a deactivar el archivo por defecto y a modificar las IPs mediante:</p>
+<pre><code>    - name: Modificamos la ip del frontend1
+      replace:
+        path: /etc/nginx/sites-available/load-balancer.conf
+        regexp: IP_FRONTEND_1
+        replace: &quot;{{ ip.frontend1 }}&quot;
+</code></pre>
+<p>El cual repetiremos para la IP del Front-End 2 y el "server_name". 
+Despues solo tendremos que habilitar el nuevo host y reiciar el servicio.</p>
+<p>Por ultimo vamos con el "deploy_wordpress", comenzaremos como siempre por borrar las instalaciones previas y descargar el codigo fuente de Wordpress. 
+Modificaremos el propietario de <code>var/www/html</code> y, una vez descomprimido, descargaremos el codigo fuente de Wordpress.</p>
+<p>Ahora pasaremos a la instalación y la configuración de valores, la cual consta de:</p>
+<pre><code>    - name: Instalar Wordpress
+      command:
+        wp config create \
+          --dbname={{ db.name }} \
+          --dbuser={{ db.user }} \
+          --dbpass={{ db.password }} \
+          --dbhost={{ ip.backend }} \
+          --path=/var/www/html/ \
+          --allow-root
+
+    - name: Configuramos valores de instalacion
+      command:
+        wp core install \
+          --url={{ certbot.domain }} \
+          --title=&quot;{{ wordpress.tittle }}&quot; \
+          --admin_user={{ wordpress.user }} \
+          --admin_password={{ wordpress.pass }} \
+          --admin_email={{ certbot.email }} \
+          --path=/var/www/html \
+          --allow-root
+</code></pre>
+<p>Para terminar vamos a definir algunas características de Wordpress al igual que en practicas pasadas, modificar alguna variable y copiar nuestro ".htacces", todo esto lo haremos con los siguientes comandos:</p>
+<pre><code>    - name: Actualizamos el wordpress
+      command: wp core update --path=/var/www/html --allow-root
+
+    - name: Actualizamos los temas
+      command: wp theme update --all --path=/var/www/html --allow-root
+
+    - name: Añadimos un tema
+      command: wp theme install {{wordpress.tema}} --activate --path=/var/www/html --allow-root
+
+    - name: Actualizamos los plugins
+      command: wp plugin update --all --path=/var/www/html --allow-root
+
+    - name: Instalamos bbpress
+      command: wp plugin install {{wordpress.plugin1}} --activate --path=/var/www/html --allow-root
+
+    - name: Instalamos hide-login
+      command: wp plugin install {{wordpress.plugin2}} --activate --path=/var/www/html --allow-root
+
+    - name: Cambiamos la estructura de las url
+      command: wp rewrite structure '/%postname%/' --path=/var/www/html --allow-root
+
+    - name: Cambiamos el /login por algo personalzado
+      command: wp option update whl_page 'acceso' --path=/var/www/html --allow-root
+
+    - name: Añadimos una variable
+      shell: sed -i &quot;/table_prefix = 'wp_';/a \$_SERVER['HTTPS'] = 'on';&quot; /var/www/html/wp-config.php
+
+    - name: Copiamos el htaccess a /var/www/html
+      copy:
+        src: ../templates/.htaccess
+        dest: /var/www/html
+        mode: 0755
+</code></pre>
+<p>Con esto la tendriamos listo nuestro Wordpress y podemos pasar a probar el funcionamiento.</p>
+<h2 id="comprobacion">Comprobación</h2>
+<p>Capturas de los scripts funcionando:</p>
+<p><img alt="imagen" src="https://github.com/user-attachments/assets/47001dc4-7a0a-4985-9207-2a217054fd3b" /></p>
+<p><img alt="imagen" src="https://github.com/user-attachments/assets/0dc55cb2-837b-4686-8813-4d248e95bc41" />
+(El error es porque el archivo estaba descargado anteriormente por tirar varias veces el script, pero funciona correctamente)</p>
+<p>Podemos ver que nuestro Wordpress esta correctamente desplegado</p>
+<p><img alt="iaw" src="https://github.com/user-attachments/assets/08136b00-6c7e-42f3-98df-7ce97ceb0694" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tags", "navigation.sections", "navigation.expand"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
