@@ -1,0 +1,24 @@
+site_name: Practicas de IAW
+
+nav:
+    - Principal: index.md
+    - Practicas:
+      - Practica 1.11: 1.11.md
+      - Practica 3.2: 3.2.md
+      - Practica 4.1: 4.1.md
+
+theme: 
+    name: "material"
+    palette:
+      primary: ligth.blue
+      accent: deep orange
+    font:
+      text: Liberation Sans
+    language: es
+
+    features:
+      - navigation.instant
+      - navigation.tracking
+      - navigation.tags
+      - navigation.sections
+      - navigation.expand
