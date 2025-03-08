@@ -20,8 +20,15 @@ Ahora vamos a editar el archivo para personalizarlo y añadir algunas practicas 
 
 ![imagen](https://github.com/user-attachments/assets/a669793b-4c57-4967-9c4f-a51c23a63213)
 
+## Documentación y GitHub Pages
+
+Debemos lanzar el comando ```docker run --rm -it -u $(id -u):$(id -g) -v "$PWD":/docs squidfunk/mkdocs-material build``` el cual nos creara el "site"
+Y el comando ```docker run --rm -it -v ~/.ssh:/root/.ssh -v "$PWD":/docs squidfunk/mkdocs-material gh-deploy``` para el "gh_deploy"
+
 ## Git Actions
 
 Vamos a configurar un archivo "git-push-mkdocs.yml" para que se realicen unas operaciones al hacer un commit de nuestro repositorio.
 
-Podemos comprobar si funciona en ```Actions/General```
+Debemos entrar en ```Setting/Actions/General``` para permitir que realice cambios nuestro "build-push-mkdocs.yaml", y una vez hecho eso ya podemos comprobar si funciona en "Actions"
+
+![imagen](https://github.com/user-attachments/assets/6f065c75-95a0-48ec-91ad-1da500bf1aa8)
